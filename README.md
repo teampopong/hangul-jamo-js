@@ -1,9 +1,9 @@
 hangul-jamo-js
 ==============
 
-한글 자모 분리 라이브러리
+한글 자모음 라이브러리
 
-## Usage
+## 인터페이스
 
 ### HANGUL.toJamos(str)
 
@@ -33,4 +33,6 @@ hangul-jamo-js
     true
     > HANGUL.startsWith('강철', '강ㅊ')
     true
+    > HANGUL.startsWith('강철', '철')
+    false
 
