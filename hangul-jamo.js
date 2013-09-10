@@ -8,6 +8,8 @@
  */
 (function () {
 
+var global = this;  // either window or global
+
 var // 초성
     FIRST_CONSONANTS = [
         'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ',
@@ -31,7 +33,7 @@ var // 초성
         'ㅂㅅ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
     ];
 
-var HANGUL = window.HANGUL = window.HANGUL || {};
+var HANGUL = global.HANGUL = global.HANGUL || {};
 
 HANGUL.toJamos = function (str) {
     var jamos = [];
