@@ -5,7 +5,9 @@ hangul-jamo-js
 
 ## 인터페이스
 
-### HANGUL.startsWith(str)
+### HANGUL.startsWith(haystack, needle)
+
+*haystack*이 *needle*로 시작하는지 여부 반환
 
     > HANGUL.startsWith('가마니', '강철')
     false
