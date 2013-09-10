@@ -5,6 +5,17 @@ hangul-jamo-js
 
 ## 인터페이스
 
+### HANGUL.startsWith(str)
+
+    > HANGUL.startsWith('가마니', '강철')
+    false
+    > HANGUL.startsWith('강철', '가')
+    true
+    > HANGUL.startsWith('강철', '강ㅊ')
+    true
+    > HANGUL.startsWith('강철', '철')
+    false
+
 ### HANGUL.toJamos(str)
 
     > HANGUL.toJamos('강철')
@@ -24,15 +35,4 @@ hangul-jamo-js
 
     > HANGUL.toJongsungs('강철')
     'ㅇㄹ'
-
-### HANGUL.startsWith(str)
-
-    > HANGUL.startsWith('가마니', '강철')
-    false
-    > HANGUL.startsWith('강철', '가')
-    true
-    > HANGUL.startsWith('강철', '강ㅊ')
-    true
-    > HANGUL.startsWith('강철', '철')
-    false
 
