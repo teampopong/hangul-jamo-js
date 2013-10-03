@@ -1,9 +1,11 @@
 hangul-jamo-js
 ==============
 
-한글 자모음 라이브러리
+한글 자모음 라이브러리.
 
-## 인터페이스
+**Pull requests are always welcome.**
+
+## Interface
 
 ### HANGUL.startsWith(haystack, needle)
 
@@ -38,3 +40,5 @@ hangul-jamo-js
     > HANGUL.toJongsungs('강철')
     'ㅇㄹ'
 
+## License
+[MIT](https://github.com/teampopong/hangul-jamo-js/blob/master/LICENSE)
